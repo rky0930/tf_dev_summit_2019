@@ -8,17 +8,17 @@
 | 10:55 a.m. | Break | |  
 | 12:00 p.m. |  Building Models with tf.function & tf.autograph  | Alexandre Passos, Software Engineer  
 | 12:15 p.m. | Datasets and Models  | Ryan Sepassi, Software Engineer 
-| 12:30 p.m. | Swift for TensorFlow: Next-Generation Machine Learning Framework  | </br>Chris Lattner, Distinguished Engineer </br>Brennan Saeta, Software Engineer  
+| 12:30 p.m. | Swift for TensorFlow:</br> Next-Generation Machine Learning Framework  | </br>Chris Lattner, Distinguished Engineer </br>Brennan Saeta, Software Engineer  
 | 1:00 p.m. |  TensorFlow Community  | Edd Wilder-James, Open Source Strategist 
 | 1:15 p.m. | Lunch | |
-| 2:35 p.m. |  TensorFlow Extended (TFX): An End-to-End ML Platform  | Clemens Mewald, Product Manager 
+| 2:35 p.m. |  TensorFlow Extended (TFX):</br> An End-to-End ML Platform  | Clemens Mewald, Product Manager 
 | 2:55 p.m. |  Data Preparation with TFX Data Validation  | Neoklis Polyzotis, Research Scientist 
 | 3:10 p.m. |   TFX Model Validation and TensorFlow Serving   | Christina Greer, Software Engineer 
 | 3:25 p.m. |  Break  | 
 | 4:45 p.m. |  TensorFlow Probability  | Josh Dillon, Software Engineer 
 | 4:55 p.m. |  Reinforcement Learning in TensorFlow | </br>Sergio Guadarrama, Senior Software Engineer </br>Eugene Brevdo, Software Engineer  
-| 5:10 p.m. |  JavaScript: Writing models and deploying them in the browser and Node.js  | </br>Yannick Assogba, Front End Software Engineer </br>Nick Kreeger, Software Engineer 
-| 5:30 p.m. |  UniRoma: In Codice Ratio  | Elena Nieddu, UniRoma
+| 5:10 p.m. |  JavaScript:</br> Writing models and deploying them in the browser and Node.js  | </br>Yannick Assogba, Front End Software Engineer </br>Nick Kreeger, Software Engineer 
+| 5:30 p.m. |  UniRoma:</br> In Codice Ratio  | Elena Nieddu, UniRoma
 
 ## Day 2 - March 7th
 | Time | Subject | Speaker |
