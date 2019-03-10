@@ -56,7 +56,7 @@
     </tr>
     <tr>
       <td>12:30 PM</td>
-      <td>Swift for TensorFlow: Next-Generation Machine Learning Framework</td>
+      <td>Swift for TensorFlow: </br>Next-Generation Machine Learning Framework</td>
       <td>
         <b>Chris Lattner</b>, Distinguished Engineer<br>
         <b>Brennan Saeta</b>, Software Engineer
@@ -122,7 +122,7 @@
     </tr>
     <tr>
       <td>5:10 PM</td>
-      <td>JavaScript: Writing models and deploying them in the browser and Node.js</td>
+      <td>JavaScript: </br>Writing models and </br>deploying them in the browser and Node.js</td>
       <td>
         <b>Yannick Assogba</b>, Front End Software Engineer<br>
         <b>Nick Kreeger</b>, Software Engineer
