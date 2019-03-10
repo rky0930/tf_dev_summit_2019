@@ -5,7 +5,7 @@
   <tbody>
     <tr style="border: none">
       <td>9:30 AM</td>
-      <td>Keynote</td>
+      <td><a hred="https://youtu.be/b5Rs1ToD9aI">Keynote</a></td>
       <td>
         <b>Megan Kacholia</b>, Engineering Director<br>
         <b>Rajat Monga</b>, Engineering Director<br>
@@ -15,7 +15,7 @@
     </tr>
     <tr>
       <td>9:50 AM</td>
-      <td>TensorFlow 2.0</td>
+      <td><a hred="https://youtu.be/Up9CvRLIIIw">TensorFlow 2.0</td>
       <td>
         <b>Karmel Allison</b>, Engineering Manager<br>
         <b>Martin Wicke</b>, Software Engineer
