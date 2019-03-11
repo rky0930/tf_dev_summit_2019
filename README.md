@@ -80,14 +80,14 @@
     </tr>
     <tr>
       <td>2:35 PM</td>
-      <td>TensorFlow Extended (TFX): An End-to-End ML Platform</td>
+      <td><a href="https://youtu.be/A5wiwT1qFjc">TensorFlow Extended (TFX): An End-to-End ML Platform</a> </br>Time stamp: start ~ to 19:51</td>
       <td>
         <b>Clemens Mewald</b>, Product Manager
       </td>
     </tr>
     <tr>
       <td>2:55 PM</td>
-      <td>Data Preparation with TFX Data Validation</td>
+      <td><a href="https://www.youtube.com/watch?v=A5wiwT1qFjc&feature=youtu.be&list=PLQY2H8rRoyvzoUYI26kHmKSJBedn3SQuB&t=1192">Data Preparation with TFX Data Validation</a> </br>Time stamp: 19:52 ~ end</td>
       <td>
         <b>Clemens Mewald</b>, Product Manager
       </td>
@@ -279,7 +279,7 @@
 
 ### Tensorflow LITE
   - Why Tensorflow Lite ? On-device ML allows building new types of products !
-    - Access to mre data
+    - Access to more data
     - Fast and closely knit interactions
     - Privacy preserving
   - Challenges
@@ -473,3 +473,9 @@
             - Forward Backward
             - Initialization
             - Storage during training
+        - Nothing to announce now, but, TensorFlow Lite team working on it and thinking a lot about it
+    - What about Tensorflow 2.0 ?
+      - TensorFlow Lite support TensorFlow 2.0
+        - SavedModel -> Tensorflow Lite
+    - Before we go.. 2 last thing !
+      - 
