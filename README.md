@@ -188,6 +188,7 @@
       <td>Research and the Future</td>
       <td>
         <b><a href="https://youtu.be/e0QK5glozC8">NERSC</a></b><br>
+        <a>Exascale Deep Learning for Climate Analytics</a><br>
         Thorsten Kurth<br>
         <br>
         <b><a href="https://youtu.be/1YbPmkChcbo">Federated Learning</a></b><br>
