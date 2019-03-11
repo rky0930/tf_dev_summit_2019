@@ -1,0 +1,71 @@
+Keynote:
+ - skip
+
+ TensorFlow 2.0
+  - TensorFlow 2.0 alpha realsed(since 2019/3/6)
+    - pip install -U --pre tensorflow
+  - What is changed: 
+    - Usability:
+      - tf.keras as the high-level API
+      - Eager execution by default
+    - Clarity:
+      - Remove duplicate functionality
+      - Consistant intuitive syntax across APIs
+      - Compatibility throughout the TensorFlow ecosystem
+    - Flexibility:
+     - Full lower-level API
+     - Internal ops accessible in tf.raw_ops
+     - Inheritable interfaces for variables, checkpoints layers
+  - How do i upgrade from 1.0 to 2.0? # "Google is now under process of converting one of the largest codebases in the world"
+    - Provide migration guides and best practices
+    - Provide Escape to backwords compatibility module: tf.compat.v1(contains all of the 1.x API except tf.contrib)
+    - Provide conversion script: tf_upgrade_v2 # "Note that this automatic conversion it will fix it, so, it works, but it won't fix your style"
+  - Timeline
+    - Alpha
+      - Available now
+    - Next release candidate
+      - In spring
+      - Implementing some missing features
+        - Converting libraries
+        - Converting Google
+      - A lots of testing and optimization
+    - RC
+      - Release testing
+      - Integration testing
+  - Progress
+    - Github.com > Tensorflow > Tensorflow_2.0 > Project tracker
+  - Go build
+    - pip installl -U --pre tensorflow 
+    - Docs: tensorflow.org/r2.0
+  - High Level APIs
+    - Keras inside tensorflow: tf.keras
+      - Standardizing on the keras API for building layers and models
+      - Include all the power of estomators
+      - You cam move from prototype to distributed training, to production serving in one go
+      - In 2.0, 1.x keras model definition will run in Eager mode without any modification
+      - tf.keras.optimizer.*
+      - tf.keras.metrics.*
+      - tf.keras.losses.*
+      - tf.keras.layers.*
+    - Eager mode
+      - Easy to debug
+      - Dynamic control
+    - Unified RNN layers
+      - In 2.0, there is on version of the LSTM and one version of GRU layer and they select the write operation for available devices for runtime
+      - tf.keras provides an API that is easy to subclass and customize, so that user can innovate on top of the existing layers
+      - User can use feature colum to parse data and feed it directly in to downstream keras layers and this feature column work both with Keras and Estimators. 
+        - User can mix ans match to create reusable data input pipelines
+    - Tensorboard
+      - Tensorboard integration with Keras as a simple as one line
+        - tf.keras.callbacks.TensorBoard(log_dir=log_dir) and Use the return value as a param of model.fit(...)
+        - Performance profilling is built-in
+    - Going big: tf.distribute.Strategy
+      - Use Multi-GPU in simple code and Scaling efficiency is greater than 90% over multiple GPUs
+    - To SavedModel and beyond
+      - Easily export models for use with TF Serving, TF Lite and more
+    - Comming soon: 
+      - Multi-node, Multi-worker synchronous training
+      - Distributing tf.keras with ParmeterServerStrategy
+      - Exposing canned Estimators from the Keras API
+      - Handling Very Large Models with variable partitioning
+      - .., and much more ! 
