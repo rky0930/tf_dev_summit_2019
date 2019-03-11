@@ -1,11 +1,11 @@
-# tf_dev_summit_2019
+# TensorFlow Dev Summit 2019
 
 ## Day 1 - March 6th
 <div class="devsite-table-wrapper"><table class="devsite-events-agenda android-dev-summit__agenda-table">
   <tbody>
     <tr style="border: none">
       <td><b>Time</b></td>
-      <td><b>Subject(YouTube vidoe link)</b></td>
+      <td><b>Subject (YouTube vidoe link)</b></td>
       <td><b>Speaker</b></td>
     </tr>
     <tr>
