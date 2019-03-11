@@ -180,7 +180,8 @@
       <td>
         <b>Contributors Luncheon</b> for those interested in SIGs and more<br>
         <br>
-        <b>TensorFlow Extended (TFX)</b> workshop
+        <b>TensorFlow Extended (TFX)</b> workshop<br>
+        <a href="https://github.com/rcrowe-google/TFX-DevSummit-2019">TFX Workshop  Meterials GitHub Repo</a>
       </td>
     </tr>
     <tr>
