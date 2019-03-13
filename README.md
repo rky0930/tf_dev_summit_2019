@@ -7,7 +7,7 @@
       <td><b>Time</b></td>
       <td><b>Subject (YouTube vidoe link)</b></td>
       <td><b>Speaker</b></td>
-      <td><b>Text<br>Summary</b></td>
+      <td><b><small>Text<br>Summary</small></b></td>
     </tr>
     <tr>
       <td>9:30 AM</td>
