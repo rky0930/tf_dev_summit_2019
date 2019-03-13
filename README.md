@@ -241,7 +241,7 @@
       - Release testing
       - Integration testing
   - Progress
-    - Github.com > Tensorflow > Tensorflow_2.0 > Project tracker
+    - Check [Tensorflow 2.0 Project Tracker](https://github.com/orgs/tensorflow/projects/4)
   - Go build
     - pip installl -U --pre tensorflow 
     - Docs: tensorflow.org/r2.0
@@ -334,7 +334,7 @@
     - Usability - Get your models up and running
       - Model conversion 
         - Steps
-          - TensorFlow > Savede Model > TF Lite Converter > TF Lite Model
+          - TensorFlow -> Savede Model -> TF Lite Converter -> TF Lite Model
         - failures & solutions
           - Limited ops => Tensorflow Select
             - In the pipeline(future work): TensorFlow Select + Selective Registration
@@ -375,8 +375,6 @@
               - Support for threading
               - Per op profiling
               - Support for Android NN API
-      - What is a delegate ?
-        - [추가하기]
       - Acceleration by delegate
         - Edge TPU delegate
           - High performance
@@ -479,4 +477,85 @@
       - TensorFlow Lite support TensorFlow 2.0
         - SavedModel -> Tensorflow Lite
     - Before we go.. 2 last thing !
-      - 
+      - 1) Pretty Cool New Project by Pete Warden - MCU
+        - Tiny models on tiny computers !
+          - Microcontroller are everywhere
+          - Speech researchers were pioneers
+          - Models just tens of kilobytes
+        - Why the models had to be so small ? 
+          - To save battery !
+          - Microcontrollers use far less power than CPUs
+          - Main CPU is turned off while MCU listens
+          - Only tens of kilobytes of RAM and Flash available
+          - No cloud connection
+        - Pete thought this approach would be widely useful
+          - Open up voice interfaces to more developers
+          - Work with other kinds of noisy sensor data
+        - Google releasing the first experimental support for embedded platforms in tensorflow light
+          - Pocket size demonstration board is showed up !
+          - A prototype of a development board built by Sparkfun [link](https://www.sparkfun.com/products/15170)
+            - 32-bit ARM Cortex-M4F processor with Direct Memory Access
+            - 48MHz CPU clock, 96MHz with TurboSPOT™
+            - Extremely low-power usage: 6uA/MHz
+            - 1MB Flash
+            - 384KB SRAM
+            - Dedicated Bluetooth processor with BLE 5
+            - Available to run on a single coin battery for many days ! 
+          - Live Demo by Pete Warden
+            - Say "Yes"
+            - Yellow light blink
+            - [Demo Video Link](https://youtu.be/DKosV_-4pdQ?t=1951)
+        - Why is this useful ?
+          - Running entirely on-device
+          - Tiny constraints
+            - It's using a 20 KB model
+            - Run using less than 100KB of RAM and 80KB of Flash
+          - All Open Source & Train your own model
+            - https://aiyprojects.withgoogle.com/open_speech_recording
+            - https://www.tensorflow.org/tutorials/sequences/audio_recognition
+          - Try it for yourself!
+            - https://www.sparkfun.com/products/15170
+            - Designed to be portable, runs on many other platform
+            - Looking forward to collaborating ! 
+      - 2) Teachable Machine - On-Device Transfer Learning on the Coral Dev Board
+        - What is Coral ?
+          - Coral is a platform for creating products with on-device ML acceleration
+          - First products features Google's Edge TPU in SBC and USB accessory forms
+        - Edge TPU
+          - A Google-designed AISC that lets you run inference on-device:
+            - Very fast inference speed(Object detection in less than 15ms)
+            - Enables greater data privacy
+            - No reliance on a network connection
+            - Runs inference with Tensorflow Lite
+          - Enables unique workloads and new applications Like on-device real-time transfer learning
+          
+        - Coral Products
+          - Coral Dev Board
+            - A single-board computer with a removable system-on-module (SOM) featuring the Edge TPU.
+            - Supported OS: Mendel Linux (derivative of Debian), Android
+            - Supported Framework: TensorFlow Lite
+            - Languages: Python (C++ coming soon)
+            - [Datasheet](https://coral.withgoogle.com/tutorials/devboard-datasheet/)
+            - [Learn More](https://coral.withgoogle.com/products/dev-board/)
+          - Coral Accelerator
+            - A USB accessory featuring the Edge TPU that brings ML inferencing to existing systems.
+            - Supported OS: Debian Linux
+            - Compatible with Raspberry Pi boards
+            - Supported Framework: TensorFlow Lite
+            - [Datasheet](https://coral.withgoogle.com/tutorials/accelerator-datasheet/)
+            - [Learn More](https://coral.withgoogle.com/products/accelerator/)
+          - Edge Training Demo
+            - Three ways to do edge training:
+              - k-nearest neighbors
+              - Weight imprinting
+              - Last layer retraining
+            - Teachable Machine 
+              - K-nearest neighbors approach is used
+              - Live Demo by June
+                - Teachable Machine showed up
+                  - Edge TPU development board assembled with a camera and series of buttons
+                  - Each botton corresponds with the class and lights up when the model identifes an objects from the camera
+                  - The training process is done on edge device immediately
+                  - Classify perfectly
+                  - [Demo Video Link](https://youtu.be/DKosV_-4pdQ?t=2527)
+    
