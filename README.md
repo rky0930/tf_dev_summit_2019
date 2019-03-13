@@ -571,7 +571,7 @@
         - How ?
           - Train with model.fit() and give it a tensorboard callback
           - This logged the right data to visualize in Tensor Board
-        - Before, User have to download the logs to local machine to visualize the data with Tensor Board
+        - Before this new features, User have to download the logs to local machine to visualize the data with Tensor Board
       - "Train and Validation showing up on the same charts to make it much easier to compare them in accuracy loss"
       - More flexable Graph Dashboard
       - Several APIs for using Tensor Board within notebooks that user change the height of the cell as well as list the active instances within user's collab notebook
