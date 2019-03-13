@@ -577,10 +577,8 @@
       - Several APIs for using Tensor Board within notebooks that user change the height of the cell as well as list the active instances within user's collab notebook
       - Hyperparameter Tuning
         - Available in the TF 2.0 alpha
-        - A couple of hyper-parameters
-          - Dropout rate, the number of units, the dense layer and optimizer
         - How to use ?
-          - Several additional import
+          - Several additional imports are needed
           - Define which values of the hyperparameters user want to try
             - Ex) num_units_list = [16, 32]
             - dropout_rate_list = [0.1, 0.2]
@@ -588,12 +586,12 @@
           - Define matrix
             - ex) accuracy
           - Wrap the existing training code
-          - Start Training
-          - The progress of traing is showed within Tensor Board
-          - Go to "HPARAMS" dashboard
-            - TABLE VIEW
-              - Each run is represented by a row
-              - Each columns for each of the hyper parameters
-              - Filtering and Sorting are available in the matrix
-            - PARALLEL COORDINATES VIEW
-            - SCATTER PLOT MATRIX VIEW
+          - Start Training !
+          - The progress of traing is showed within Tensor Board in Colab(Jupyter Notebook)
+            - Go to "HPARAMS" dashboard in TensorBoard Top Menu
+              - TABLE VIEW
+                - Each run is represented by a row
+                - Each columns for each of the hyper parameters
+                - Filtering and Sorting are available in the matrix
+              - PARALLEL COORDINATES VIEW
+              - SCATTER PLOT MATRIX VIEW
