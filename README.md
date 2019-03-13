@@ -558,4 +558,5 @@
                   - The training process is done on edge device immediately
                   - Classify perfectly
                   - [Demo Video Link](https://youtu.be/DKosV_-4pdQ?t=2527)
-    
+
+### 
