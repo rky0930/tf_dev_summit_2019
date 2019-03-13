@@ -7,6 +7,7 @@
       <td><b>Time</b></td>
       <td><b>Subject (YouTube vidoe link)</b></td>
       <td><b>Speaker</b></td>
+      <td><b>Text Summary</b></td>
     </tr>
     <tr>
       <td>9:30 AM</td>
@@ -26,7 +27,7 @@
         <b>Martin Wicke</b>, Software Engineer
       </td>
       <td>
-        <a href="#tensorflow-20">Text<br>Summary</a>
+        <a href="#tensorflow-20">#</a>
       </td>
     </tr>
     <tr>
