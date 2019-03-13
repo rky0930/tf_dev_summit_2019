@@ -25,6 +25,9 @@
         <b>Karmel Allison</b>, Engineering Manager<br>
         <b>Martin Wicke</b>, Software Engineer
       </td>
+      <td>
+        <a href="#tensorflow-20">Text<br>Summary</a>
+      </td>
     </tr>
     <tr>
       <td>10:15 AM</td>
@@ -595,3 +598,5 @@
                 - Filtering and Sorting are available in the matrix
               - PARALLEL COORDINATES VIEW
               - SCATTER PLOT MATRIX VIEW
+
+### 
