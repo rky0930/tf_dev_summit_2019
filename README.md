@@ -7,7 +7,6 @@
       <td><b>Time</b></td>
       <td><b>Subject (YouTube vidoe link)</b></td>
       <td><b>Speaker</b></td>
-      <td><b>Text Summary</b></td>
     </tr>
     <tr>
       <td>9:30 AM</td>
@@ -21,18 +20,15 @@
     </tr>
     <tr>
       <td>9:50 AM</td>
-      <td><a href="https://youtu.be/k5c-vg4rjBw">TensorFlow 2.0</td>
+      <td><a href="https://youtu.be/k5c-vg4rjBw">TensorFlow 2.0</a><br><a href="#tensorflow-20">(text summary)</a></td>
       <td>
         <b>Karmel Allison</b>, Engineering Manager<br>
         <b>Martin Wicke</b>, Software Engineer
       </td>
-      <td>
-        <a href="#tensorflow-20">#</a>
-      </td>
     </tr>
     <tr>
       <td>10:15 AM</td>
-      <td><a href="https://youtu.be/DKosV_-4pdQ">TensorFlow Lite</a></td>
+      <td><a href="https://youtu.be/DKosV_-4pdQ">TensorFlow Lite</a><br><a href="#tensorflow-lite">(text summary)</a></td>
       <td>
         <b>Pete Warden</b>, Software Engineer<br>
         <b>Raziel Alvarez</b>, Software Engineer
