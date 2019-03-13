@@ -27,7 +27,7 @@
         <b>Karmel Allison</b>, Engineering Manager<br>
         <b>Martin Wicke</b>, Software Engineer
       </td>
-      <td><a href="#tensorflow-20">#</a></td>
+      <td><a href="#tensorflow-20">link</a></td>
     </tr>
     <tr>
       <td>10:15 AM</td>
@@ -36,7 +36,7 @@
         <b>Pete Warden</b>, Software Engineer<br>
         <b>Raziel Alvarez</b>, Software Engineer
       </td>
-      <td><a href="#tensorflow-lite">#</a></td>
+      <td><a href="#tensorflow-lite">link</a></td>
     </tr>
     <tr>
       <td>10:55 AM</td>
@@ -49,7 +49,7 @@
       <td>
         <b>Gal Oshri</b>, Product Manager
       </td>
-      <td><a href="#tensorboard">#</a></td>
+      <td><a href="#tensorboard">link</a></td>
     </tr>
     <tr>
       <td>12:10 PM</td>
