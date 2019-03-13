@@ -7,6 +7,7 @@
       <td><b>Time</b></td>
       <td><b>Subject (YouTube vidoe link)</b></td>
       <td><b>Speaker</b></td>
+      <td><b>Text<br>Summary</b></td>
     </tr>
     <tr>
       <td>9:30 AM</td>
@@ -17,26 +18,30 @@
         <b>Kemal El Moujahid</b>, Director, Product Management<br>
         <b>Alina Shinkarsky</b>, Program Manager
       </td>
+      <td></td>
     </tr>
     <tr>
       <td>9:50 AM</td>
-      <td><a href="https://youtu.be/k5c-vg4rjBw">TensorFlow 2.0</a><br><a href="#tensorflow-20">(text summary)</a></td>
+      <td><a href="https://youtu.be/k5c-vg4rjBw">TensorFlow 2.0</a></td>
       <td>
         <b>Karmel Allison</b>, Engineering Manager<br>
         <b>Martin Wicke</b>, Software Engineer
       </td>
+      <td></td>
     </tr>
     <tr>
       <td>10:15 AM</td>
-      <td><a href="https://youtu.be/DKosV_-4pdQ">TensorFlow Lite</a><br><a href="#tensorflow-lite">(text summary)</a></td>
+      <td><a href="https://youtu.be/DKosV_-4pdQ">TensorFlow Lite</a></td>
       <td>
         <b>Pete Warden</b>, Software Engineer<br>
         <b>Raziel Alvarez</b>, Software Engineer
       </td>
+      <td></td>
     </tr>
     <tr>
       <td>10:55 AM</td>
       <td colspan="2">Break</td>
+      <td></td>
     </tr>
     <tr>
       <td>12:00 PM</td>
@@ -44,6 +49,7 @@
       <td>
         <b>Gal Oshri</b>, Product Manager
       </td>
+      <td></td>
     </tr>
     <tr>
       <td>12:10 PM</td>
@@ -51,6 +57,7 @@
       <td>
         <b>Alexandre Passos</b>, Software Engineer
       </td>
+      <td></td>
     </tr>
     <tr>
       <td>12:22 PM</td>
@@ -58,6 +65,7 @@
       <td>
         <b>Ryan Sepassi</b>, Software Engineer
       </td>
+      <td></td>
     </tr>
     <tr>
       <td>12:30 PM</td>
@@ -66,6 +74,7 @@
         <b>Chris Lattner</b>, Distinguished Engineer<br>
         <b>Brennan Saeta</b>, Software Engineer
       </td>
+      <td></td>
     </tr>
     <tr>
       <td>1:00 PM</td>
@@ -73,10 +82,12 @@
       <td>
         <b>Edd Wilder-James</b>, Open Source Strategist
       </td>
+      <td></td>
     </tr>
     <tr>
       <td>1:15 PM</td>
       <td colspan="2">Lunch</td>
+      <td></td>
     </tr>
     <tr>
       <td>2:35 PM</td>
@@ -84,6 +95,7 @@
       <td>
         <b>Clemens Mewald</b>, Product Manager
       </td>
+      <td></td>
     </tr>
     <tr>
       <td>2:55 PM</td>
@@ -91,6 +103,7 @@
       <td>
         <b>Clemens Mewald</b>, Product Manager
       </td>
+      <td></td>
     </tr>
     <tr>
       <td>3:10 PM</td>
@@ -98,6 +111,7 @@
       <td>
         <b>Christina Greer</b>, Software Engineer
       </td>
+      <td></td>
     </tr>
     <tr>
       <td>3:25 PM</td>
@@ -105,10 +119,12 @@
       <td>
         <b>André Susano Pinto</b>, Software Engineer
       </td>
+      <td></td>
     </tr>
     <tr>
       <td>3:40 PM</td>
       <td colspan="2">Break</td>
+      <td></td>
     </tr>
     <tr>
       <td>4:45 PM</td>
@@ -116,6 +132,7 @@
       <td>
         <b>Josh Dillon</b>, Software Engineer
       </td>
+      <td></td>
     </tr>
     <tr>
       <td>4:55 PM</td>
@@ -124,6 +141,7 @@
         <b>Sergio Guadarrama</b>, Senior Software Engineer<br>
         <b>Eugene Brevdo</b>, Software Engineer
       </td>
+      <td></td>
     </tr>
     <tr>
       <td>5:10 PM</td>
@@ -132,6 +150,7 @@
         <b>Yannick Assogba</b>, Front End Software Engineer<br>
         <b>Nick Kreeger</b>, Software Engineer
       </td>
+      <td></td>
     </tr>
     <tr>
       <td>5:30 PM</td>
@@ -139,6 +158,7 @@
       <td>
         <b>Elena Nieddu</b>, UniRoma
       </td>
+      <td></td>
     </tr>
   </tbody>
 </table></div>
@@ -159,6 +179,7 @@
         <b><a href="https://youtu.be/paJNSODuu3c">Uber Manifold</a></b> - Lezhi Li<br>
         <b><a href="https://youtu.be/GRMvCeIKvps">TF.js at Creative Labs</a></b> - Irene Alvarado<br>
       </td>
+      <td></td>
     </tr>
     <tr>
       <td>11:15 AM</td>
@@ -173,6 +194,7 @@
         <b>TensorFlow On-Device: Compressing, Quantizing, and Distributing</b><br>
         YC Ling, Suharsh Sivakumar, Sara Sirajuddin, Tim Davis, Pete Warden
       </td>
+      <td></td>
     </tr>
     <tr>
       <td>12:00 PM</td>
@@ -183,6 +205,7 @@
         <b>TensorFlow Extended (TFX)</b> workshop<br>
         <a href="https://github.com/rcrowe-google/TFX-DevSummit-2019">TFX Workshop  Meterials GitHub Repo</a>
       </td>
+      <td></td>
     </tr>
     <tr>
       <td>1:15 PM</td>
@@ -200,6 +223,7 @@
         <b><a href="https://youtu.be/rlpQjnUvoKw">Sonnet 2.0</a></b><br>
         Tamara Norman, Malcolm Reynolds
       </td>
+      <td></td>
     </tr>
   </tbody>
 </table></div>
