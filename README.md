@@ -57,7 +57,7 @@
       <td>
         <b>Alexandre Passos</b>, Software Engineer
       </td>
-      <td></td>
+      <td><a href="#tffunction-and-autograph">link</a></td>
     </tr>
     <tr>
       <td>12:22 PM</td>
@@ -174,7 +174,7 @@
         <b><a href="https://youtu.be/n2MwJ1guGVQ">TensorFlow.jl (Julia)</a></b> - Jonathan Malmoud<br>
         <b><a href="https://youtu.be/Y8Nfcjg0faw">NetEase</a></b> - Huijie Lin<br>
         <b><a href="https://youtu.be/ABBnNjbjv2Q">TF Lattice</a></b> - Maya Gupta<br>
-        <b>Alibaba</b> - Wei Lin<br>
+        <b><a href="https://youtu.be/bpoe33TfVAk">Alibaba</a></b> - Wei Lin<br>
         <b><a href="https://youtu.be/D1c2pi624X4">TF.text</a></b> - Mark Omernick<br>
         <b><a href="https://youtu.be/paJNSODuu3c">Uber Manifold</a></b> - Lezhi Li<br>
         <b><a href="https://youtu.be/GRMvCeIKvps">TF.js at Creative Labs</a></b> - Irene Alvarado<br>
@@ -645,3 +645,34 @@
       - Functions are polymorphic
         - Tensorflow graph is very much not polymorphic
           - ex) A graph built for a float64 cannot use float32 or float16
+        - but tf.function is like python code tends to be very free into the types
+        - So, User just use the tf.function as normal tensorflow operation
+        - the autograph build up user's code to graph and the graph run blazingly fast
+        - And, It's not completely hidden, User can access to the graph that is generated
+        - If user need to manipulate the graphs, user still can do it
+  - State in tf.function
+    - Never write tf.control_dependencies again
+      - Automatic control dependencies
+  - Variables in tf.function
+    - Nerver use tf.global_variables_initializer again
+      - User don't need to manually initialize variables
+      - Non-ambiguous code is ok
+      - Inializers can be path-dependent
+  - Control flow in tf.function
+    - Breaking up with tf.{cond, while_loop}
+      - python compiler called autograph that rewrite control flow expression into faster dynamic graph code
+        - How do we customize python ?
+          - Operator overloading !
+            - __add__, __sub__, etc
+          - We can't overload __if__
+            - Sadly, no __if__, __while__, etc
+          - Autograph:
+            - it overload __if__, __while__, etc
+              - Tensorflow compiler called autograph that take user's python code and rewrite it in a for that lets us call __if__, __while__, etc on tensors
+  - Summary
+    - session.run goes away
+    - tf.control_dependencies goes away
+    - tf.global_variables_initilizer goes away
+    - tf.cond, tf.while_loop goes away
+    - Just use tf.funtion like how we would use in a normal programming language
+
