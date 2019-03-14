@@ -663,12 +663,12 @@
       - python compiler called autograph that rewrite control flow expression into faster dynamic graph code
         - How do we customize python ?
           - Operator overloading !
-            - __add__, __sub__, etc
-          - We can't overload __if__
-            - Sadly, no __if__, __while__, etc
+            - \_\_add\_\_, \_\_sub\_\_, etc
+          - We can't overload \_\_if\_\_
+            - Sadly, no \_\_if\_\_, \_\_while\_\_, etc
           - Autograph:
-            - it overload __if__, __while__, etc
-              - Tensorflow compiler called autograph that take user's python code and rewrite it in a for that lets us call __if__, __while__, etc on tensors
+            - it overload \_\_if\_\_, \_\_while\_\_, etc
+              - Tensorflow compiler called autograph that take user's python code and rewrite it in a for that lets us call \_\_if\_\_, \_\_while\_\_, etc on tensors
   - Summary
     - session.run goes away
     - tf.control_dependencies goes away
