@@ -620,4 +620,28 @@
               - PARALLEL COORDINATES VIEW
               - SCATTER PLOT MATRIX VIEW
 
-### 
+### tf.function and Autograph
+  - Why graphs ? If we have graphs, 
+      - We can get full program optimization on some hardware like TPU
+      - We can take a model and deploy it on server, mobile devices and whatever thing you want
+  - So, Just keep doing with graphs ? No
+  - TensorFlow is fundamentally changing the programming model in v2.0
+    - Removing the model that first add a bunch of nodes to a graph and then rely on session that run to prune things out of the graph to figure out the precise thins you want to running the correct order.
+    - Replaceing it with a much simpler model based on this notion of a function
+    - It's "tf.function()"
+    - User will never have to use session or run anymore
+  - tf.function()
+    - A function is like an op
+      - Just like an operation execpt one that user get to define using composition of the other operations intensive flow
+      - Once have the funtion, 
+        - User call it in inside another function
+        - User can take it's gradient
+        - User can run it on the GPU, TPU, CPU, distributed things
+      - Just like how user do with any other tensorflow operation
+    - Functions can be faster than eager code
+      - If user look at models there are large convolutions or big matrix multiplications large reductions, it's not actually any faster becuase the eager excution is pretty fast
+      - Whereas models get small and the operations get small, tf.function speed up tensorflow.
+        - ex) Tenfold speed up if user used tf.funtion with tiny lstm cells of ten units
+      - Functions are polymorphic
+        - Tensorflow graph is very much not polymorphic
+          - ex) A graph built for a float64 cannot use float32 or float16
