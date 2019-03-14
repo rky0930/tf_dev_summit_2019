@@ -685,34 +685,36 @@
       - High-performance and flexible input pipelines
       - Data is a little out of step
         - Every single dataset is little bit different
-        - User's just interesed in having data in a format that sort of ready to move into TF data pipeline
+        - User is just interesed in having data in a format that sort of ready to move into TF data pipeline
         - Google and user really want that data and models to be simpatico
       - TensorFlow Datasets
         - Let's play nice
           - import tensorflow_datasets as tfds
           - train_ds = tfds.load("<NAME_OF_DATASET>/<ENCODING_TYPE>", split="train", as_superviesed=True)
           - train_ds = train_dataset.shuffle(1024).batch(128)
-          - for input, targets in train_ds.repeat(10):
+          - for input, targets in train_ds.repeat(10): # using with loop
           - ... 
-      - DatasetBuilder
+      - class DatasetBuilder
         - Each of tf.dataset is packaged together as a datasetBuilder
           - First, it had a method called download and prepare
           - Second, as_dataset. as_dataset take those pre-processed files on disk and produces a tf.data.dataset
-          - Third, Useful information. Metadata about the dataset which can be programmatically useful. DatasetInfo
-            - features (shape, class label)
-            - total_num_examples
-            - splits (train, test)
-            - etc
+          - Third, Useful information. Metadata about the dataset which can be programmatically useful.
+            - DatasetInfo
+              - Documenting objects 
+              - features (shape, class label)
+              - total_num_examples
+              - splits (train, test)
+              - etc
       - TensorFlow Datasets support NumPy usage too
         - tfds.as_numpy(...)
           - It hide all the tensorflow from user
           - return python generator over numpy array
-      - TensorFLow Datasets
+      - Installation
         - pip install tensorflow-datasets
         - tensorflow.org/datasets
         - httsp://github.com/tensorflow/datasets
       - 30+ datasets with more on the way
-        - there is more being added every day
+        - There is more being added every day
         - The community on github has actually gotten surprisingly active and quickly
       - Make your data famous 
         - httsp://github.com/tensorflow/datasets
