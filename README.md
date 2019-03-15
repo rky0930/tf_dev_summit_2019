@@ -715,6 +715,43 @@
         - httsp://github.com/tensorflow/datasets
       - 30+ datasets with more on the way
         - There is more being added every day
-        - The community on github has actually gotten surprisingly active and quickly
+        - The community on github has actually gotten surprisingly active
       - Make your data famous 
         - httsp://github.com/tensorflow/datasets
+
+### Swift for Tensorflow: The Next-Generation Machine Learning Framework
+  - Swift for TensorFlow
+    - TensorFlow with no boundaries!
+  - Swift 
+    - Modern and Cross-platform programming language
+    - Designed to be easy to learn and use
+    - OpenSource (swift.org)
+  - Image classfication model
+    - look alot like Keras
+    - <Code example>
+  - Train a model
+    - Pick an optimizer and random input then pick a training loop
+    - <Code example>
+  - Demo: Basic Workflow
+    - Modifying machine learning models
+      - Environment
+        - Google collab hosted Jupyter notebooks and It comes with Swift for TensorFlow
+      - First try:;
+        - Initiate a model
+        - Use stocastic gradient descent SDG optimizer
+        - Just train a model using swift for tensorflow
+        - Start training 
+        - Found the loss is decreased 
+      - Second try:
+        - Add dense layers
+        - Add skip connection
+        - Re-run training loop
+      - This is an example of what it's like to use Swift tensorflow to develop and iterate as you apply models to applications 
+      - Swift for tensorflow was designed for researchers
+        - Researchers often .. 
+          - need to do more than just change models
+          - change the way the archtecture fits together
+          - need to define entirely new abstractions or layers
+        - Writing custom layers
+          - Define DoubleBiasDenseLayer
+          - <Code example>
