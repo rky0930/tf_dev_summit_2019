@@ -755,3 +755,55 @@
         - Writing custom layers
           - Define DoubleBiasDenseLayer
           - <Code example>
+          - Initiate
+          - Training using custom hand write training loop
+        - Simulate running on a super large data parallel GPU or TPU cluster on a single machine
+          - Experimenting with batch sizes
+            - Custom training loop
+              - Additional inner loop
+              - Run forward pass
+              - Take the gradients for each step and aggregate them in this grads variable
+              - Simulates running on four independent accelerateors four GPUS
+              - So plexable
+      - No boundary: Interoperability
+        - No wrappers, Just import it, then call it  
+        - Demo: Interoperability
+          - Seamless Python Interoperability
+            - Import Tensoflow
+            - Import Python
+            - The Python object that allow you to import arbitray python libraries
+            - ex) matplotlib.pyplot and numpy from python
+            - Run the plt.plot and numpy and they just works
+            - Looks like the python code but it's actually pure Swift
+            - Just works seamlessly 
+          - RL with OpenAI Gym
+            - Import Gym
+            - Define neural network
+            - Use cart pole v-0 environment
+            - Run 
+            - Get gradient
+            - Record the mean reward 
+            - Train
+            - It's all very simple straight forward Swift 
+            - User can train using Swift TensorFlow model in an openAI gym environment using Python bridge. Totally seamless
+            - User can keep train of the parameters of the rewards and plot the mean rewards as the model train using Python Numpy. Totally seamless
+    - No boundary: Differentiable programming
+      - Demo: Differentiable Programming
+        - Differential Programming
+          - annotate @differentiable then tensorflow will derive the derivative for the function
+            - Just plain old double is used becuased automatic differentiation is built right into the language
+        - Custom differential data types
+          - @differentiable helps catch errors
+          - Maginitude of point
+            - Swift doesn't include a square root function because I want a good excuse for you to see the interoperability with C
+            - We're actually goint to use a C's square root function that operates on doubles
+            - Error occured
+              - Square root function is compiled by the C compiler and today the C compiler can't automaticcally computre deribatives for you 
+              - This is great excuse to show you how to write custom gradients
+            - So, create own square root function with swift
+          - How to use customization, custom gradients, custom datatypes with the language integrated automatic differentiation built into swift for TensorFlow
+          - Printing out values in the backward pass
+
+
+
+
