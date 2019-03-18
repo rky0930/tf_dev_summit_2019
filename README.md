@@ -103,7 +103,7 @@
       <td>
         <b>Clemens Mewald</b>, Product Manager
       </td>
-      <td></td>
+      <td><a href="#data-preparation-with-tfx-data-validation">link<a></td>
     </tr>
     <tr>
       <td>3:10 PM</td>
@@ -904,69 +904,76 @@
       - Model (Wide+Deep)
       - Output: High tip or not
   
-  ### Data Preparation with TFX Data Validation 
-    - Overview
-    - Data Ingestion
-      - ExampleGen
+### Data Preparation with TFX Data Validation 
+  - Overview
+  - Data Ingestion
+    - Component: ExampleGen
+      - Inputs and Outputs
+        - Raw data(CSV, TFRecord) -> Example Gen -> Split TFRecord Data -> Training, Eval
+      - Data Analysis & Validation
+        - Why validation is important
+          - Data understanding is important for model understanding
+          - Treat data as you treat code
+          - Catching errors early is critical
+  - Data Analysis & Validation
+    - Component: StatisticsGen
+      - Inputs and Outputs
+        - ExampleGen -> data -> StatisticsGen -> Statistics
+          - Data
+            - Training
+            - Eval
+            - Serving Logs (for skew detection)
+          - Statistics
+            - Captures shape of data
+            - Visualization highlights unusual stats
+            - Overlay helps with comparison
+          - Whay are my tip predictions bad in the morming hours?
+            - Don't have much data at that time
+    - Component: SchemaGen
+      - Inputs and Outputs
+        - StatisticsGen -> Statistics -> SchemaGen -> Schema
+          - Schema
+            - High-level description of the data
+              - Expected features
+              - Expected value domains
+              - Expected constraints
+              - and much more 
+            - Codifies expectations of "good" data
+            - Initially inferred, then user-curated
+          - What are expected values for payment types ?
+    - Component: Example Validator
+      - Inputs and Outputs
+        - StatisticsGen, SchemaGen -> Statistics, Schema -> Example Validator -> Anomalies Report
+          - Annomalies report
+            - Missing features
+            - Wrong feature valency
+            - Training/serving skew
+            - Data distribution drift
+            - ...
+          - Is this new taxi company name a typo or a new company
+  - Data Transformation
+    - Component: Transform
+      - Using tf.Transform for feature transformations
+      - Inputs and Outputs
+        - ExampleGen, SchemaGen, Code -> Data, Schema -> Transform -> Transform Graph, Transformed Data -> Trainer
+          - Code
+            - User providing pre-processing function
+          - Schema for parsing
+          - Transform Graph
+            - Applied at training time
+            - Embedded in serving graph
+          - (Optional) Transformed Data
+            - For performance optimization
+  - Training 
+    - Component: Trainer
         - Inputs and Outputs
-          - Raw data(CSV, TFRecord) -> Example Gen -> Split TFRecord Data -> Training, Eval
-        - Data Analysis & Validation
-          - Why validation is important
-            - Data understanding is important for model understanding
-            - Treat data as you treat code
-            - Catching errors early is critical
-    - Data Analysis & Validation
-      - StatisticsGen
-        - Inputs and Outputs
-          - ExampleGen -> data -> StatisticsGen -> Statistics
-            - Data
-              - Training
-              - Eval
-              - Serving Logs (for skew detection)
-            - Statistics
-              - Captures shape of data
-              - Visualization highlights unusual stats
-              - Overlay helps with comparison
-            - Whay are my tip predictions bad in the morming hours?
-              - Don't have much data at that time
-      - SchemaGen
-        - Inputs and Outputs
-          - StatisticsGen -> Statistics -> SchemaGen -> Schema
-            - Schema
-              - High-level description of the data
-                - Expected features
-                - Expected value domains
-                - Expected constraints
-                - and much more 
-              - Codifies expectations of "good" data
-              - Initially inferred, then user-curated
-            - What are expected values for payment types ?
-      - Example Validator
-        - Inputs and Outputs
-          - StatisticsGen, SchemaGen -> Statistics, Schema -> Example Validator -> Anomalies Report
-            - Annomalies report
-              - Missing features
-              - Wrong feature valency
-              - Training/serving skew
-              - Data distribution drift
-              - ...
-            - Is this new taxi company name a typo or a new company
-    - Data Transformation
-      - Transform
-        - Using tf.Transform for feature transformations
-        - Inputs and Outputs
-          - ExampleGen, SchemaGen, Code -> Data, Schema -> Transform -> Transform Graph, Transformed Data -> Trainer
-            - Code
-              - User providing pre-processing function
-            - Schema for parsing
-            - Transform Graph
-              - Applied at training time
-              - Embedded in serving graph
-            - (Optional) Transformed Data
-              - For performance optimization
-    - Training 
-      - Component
-        - Trainer
-          - Inputs and Outputs
-            - 
+          - Transform, SchemaGen, Code -> Transform Graph, Data, Schema -> Traniner -> model(s) -> Evaluator, Model Validator, Pusher
+            - User-provided training code(Tensorflow)
+            - Optionally, transformed data
+            - model(s)
+              - Highlight: SavedModel Format
+                - Train, Eval and Inference Graphs -> Tensorflow model analysis, TensorFlow Serving
+
+            
+                
 
