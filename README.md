@@ -95,7 +95,7 @@
       <td>
         <b>Clemens Mewald</b>, Product Manager
       </td>
-      <td></td>
+      <td><a href="#tensorflow-extended-tfx-an-end-to-end-ml-platform">link</a></td>
     </tr>
     <tr>
       <td>2:55 PM</td>
