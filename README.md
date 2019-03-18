@@ -728,10 +728,10 @@
     - OpenSource (swift.org)
   - Image classfication model
     - look alot like Keras
-    - <Code example>
+    - Code example
   - Train a model
     - Pick an optimizer and random input then pick a training loop
-    - <Code example>
+    - Code example
   - Demo: Basic Workflow
     - Modifying machine learning models
       - Environment
