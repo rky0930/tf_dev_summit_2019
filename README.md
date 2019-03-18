@@ -747,98 +747,158 @@
         - Add skip connection
         - Re-run training loop
       - This is an example of what it's like to use Swift tensorflow to develop and iterate as you apply models to applications 
-      - Swift for tensorflow was designed for researchers
-        - Researchers often .. 
-          - need to do more than just change models
-          - change the way the archtecture fits together
-          - need to define entirely new abstractions or layers
-        - Writing custom layers
-          - Define DoubleBiasDenseLayer
-          - Code example
-          - Initiate
-          - Training using custom hand write training loop
-        - Simulate running on a super large data parallel GPU or TPU cluster on a single machine
-          - Experimenting with batch sizes
-            - Custom training loop
-              - Additional inner loop
-              - Run forward pass
-              - Take the gradients for each step and aggregate them in this grads variable
-              - Simulates running on four independent accelerateors four GPUS
-              - So plexable
-      - No boundary: Interoperability
-        - No wrappers, Just import it, then call it  
-        - Demo: Interoperability
-          - Seamless Python Interoperability
-            - Import Tensoflow
-            - Import Python
-            - The Python object that allow you to import arbitray python libraries
-            - ex) matplotlib.pyplot and numpy from python
-            - Run the plt.plot and numpy and they just works
-            - Looks like the python code but it's actually pure Swift
-            - Just works seamlessly 
-          - RL with OpenAI Gym
-            - Import Gym
-            - Define neural network
-            - Use cart pole v-0 environment
-            - Run 
-            - Get gradient
-            - Record the mean reward 
-            - Train
-            - It's all very simple straight forward Swift 
-            - User can train using Swift TensorFlow model in an openAI gym environment using Python bridge. Totally seamless
-            - User can keep train of the parameters of the rewards and plot the mean rewards as the model train using Python Numpy. Totally seamless
-      - No boundary: Differentiable programming
-        - Demo: Differentiable Programming
-          - Differential Programming
-            - annotate @differentiable then tensorflow will derive the derivative for the function
-              - Just plain old double is used becuased automatic differentiation is built right into the language
-          - Custom differential data types
-            - @differentiable helps catch errors
-            - Maginitude of point
-              - Swift doesn't include a square root function because I want a good excuse for you to see the interoperability with C
-              - We're actually goint to use a C's square root function that operates on doubles
-              - Error occured, Why ?
-                - Square root function is compiled by the C compiler and today the C compiler can't automaticcally compute deribatives for you 
-              - This is great excuse to show you how to write custom gradients
-              - So, create own square root function with swift
-          - Demo Summary
-            - How to use 
-              - customization
-              - custom gradients
-              - custom datatypes with the language integrated automatic differentiation built into swift for TensorFlow
-          - Printing out values in the backward pass
-      - No boundary: Performance
-        - Speedy low level performance
-        - Thread-level scalability, no GIL
-        - Automatic graph extraction
-        - Example: AlphaGo Zero
-          - Combination of three technologies
-            - Deep learning
-            - "Old AI" techniques: Monte Carlo Search
-            - High performance TPU accelerators
-          - Demo: MiniGo in Colab
-            - Open-source go player inspired by deep minds alphago zero project
-            - It's available on github
-            - Monte Carlo tree search and the rest of mini go self play in pure Swift
-      - No boundary: AI education
-        - Jeremy Howard from Fast.AI
-          - Fast.AI always looking to push the boundaries of what's possible with deep learning especially pushing to make recent advances more accessible
-          - World's best document classifier
-          - Hundreds thousands have become deep learning practitioners through Fast.AI cources
-          - SOTA result with Fast.AI library
-          - Announcing that Fast.AI's next course will include a big Swift component
-    - Most important part is that Swift for TensorFlow is really TensorFlow. 
-    - Open Source
-      - https://github.com/tensorflow/swift
-      - swift@tensorflow.org
-    - colab
-      - Works great in colab
-    - v0.2 is released
-      - Available now: Intrepid researchers wanted! 
-      - Not ready for production yet but
-        - Tensorflow swift team is very excited about 
-          - Shaping future,
-          - Building out,
-          - Exploring new programming model. 
-        - This is a great opportunity for this advanced researchers to get involved and help shape the future of tensorflow swift platform
+  - Swift for tensorflow was designed for researchers
+    - Researchers often .. 
+      - need to do more than just change models
+      - change the way the archtecture fits together
+      - need to define entirely new abstractions or layers
+    - Writing custom layers
+      - Define DoubleBiasDenseLayer
+      - Code example
+      - Initiate
+      - Training using custom hand write training loop
+    - Simulate running on a super large data parallel GPU or TPU cluster on a single machine
+      - Experimenting with batch sizes
+        - Custom training loop
+          - Additional inner loop
+          - Run forward pass
+          - Take the gradients for each step and aggregate them in this grads variable
+          - Simulates running on four independent accelerateors four GPUS
+          - So plexable
+  - No boundary: Interoperability
+    - No wrappers, Just import it, then call it  
+    - Demo: Interoperability
+      - Seamless Python Interoperability
+        - Import Tensoflow
+        - Import Python
+        - The Python object that allow you to import arbitray python libraries
+        - ex) matplotlib.pyplot and numpy from python
+        - Run the plt.plot and numpy and they just works
+        - Looks like the python code but it's actually pure Swift
+        - Just works seamlessly 
+      - RL with OpenAI Gym
+        - Import Gym
+        - Define neural network
+        - Use cart pole v-0 environment
+        - Run 
+        - Get gradient
+        - Record the mean reward 
+        - Train
+        - It's all very simple straight forward Swift 
+        - User can train using Swift TensorFlow model in an openAI gym environment using Python bridge. Totally seamless
+        - User can keep train of the parameters of the rewards and plot the mean rewards as the model train using Python Numpy. Totally seamless
+  - No boundary: Differentiable programming
+    - Demo: Differentiable Programming
+      - Differential Programming
+        - annotate @differentiable then tensorflow will derive the derivative for the function
+          - Just plain old double is used becuased automatic differentiation is built right into the language
+      - Custom differential data types
+        - @differentiable helps catch errors
+        - Maginitude of point
+          - Swift doesn't include a square root function because I want a good excuse for you to see the interoperability with C
+          - We're actually goint to use a C's square root function that operates on doubles
+          - Error occured, Why ?
+            - Square root function is compiled by the C compiler and today the C compiler can't automaticcally compute deribatives for you 
+          - This is great excuse to show you how to write custom gradients
+          - So, create own square root function with swift
+      - Demo Summary
+        - How to use 
+          - customization
+          - custom gradients
+          - custom datatypes with the language integrated automatic differentiation built into swift for TensorFlow
+      - Printing out values in the backward pass
+  - No boundary: Performance
+    - Speedy low level performance
+    - Thread-level scalability, no GIL
+    - Automatic graph extraction
+    - Example: AlphaGo Zero
+      - Combination of three technologies
+        - Deep learning
+        - "Old AI" techniques: Monte Carlo Search
+        - High performance TPU accelerators
+      - Demo: MiniGo in Colab
+        - Open-source go player inspired by deep minds alphago zero project
+        - It's available on github
+        - Monte Carlo tree search and the rest of mini go self play in pure Swift
+  - No boundary: AI education
+    - Jeremy Howard from Fast.AI
+      - Fast.AI always looking to push the boundaries of what's possible with deep learning especially pushing to make recent advances more accessible
+      - World's best document classifier
+      - Hundreds thousands have become deep learning practitioners through Fast.AI cources
+      - SOTA result with Fast.AI library
+      - Announcing that Fast.AI's next course will include a big Swift component
+  - Most important part is that Swift for TensorFlow is really TensorFlow. 
+  - Open Source
+    - https://github.com/tensorflow/swift
+    - swift@tensorflow.org
+  - colab
+    - Works great in colab
+  - v0.2 is released
+    - Available now: Intrepid researchers wanted! 
+    - Not ready for production yet but
+      - Tensorflow swift team is very excited about 
+        - Shaping future,
+        - Building out,
+        - Exploring new programming model. 
+      - This is a great opportunity for this advanced researchers to get involved and help shape the future of tensorflow swift platform
 
+### TensorFlow Extended (TFX): An End-to-End ML Platform 
+  - TensorFlow extended (TFX): An End-to-End ML Platform
+    - Figure 1: High-level component overview of a machine learning platform
+  - TFX powers our most important bets and products
+    - AlphaBets
+    - Major Products
+  - So far, we've made some of our libraries available
+    - Figure 1: High-level component overview of a machine learning platform
+  - ... and some of our most important partners
+  - Today, we share the horizontal layers that integrate libraries in one product
+  - Building Components out of Libraries
+  - What makes a Component
+    - Well defined config
+    - Context
+  - Metadata Store? That's new
+    - Task-Aware Pipelines
+    - Task-and Data-Aware Pipelines
+  - What's in the Metadata Store ?
+    - Type definitions of Artifacts and their Properties
+      - E.g. Models, Data, Evaluation Metrics
+    - Execution Records (Runs) of Components
+      - E.g. Runtime Configuration, Inputs + Outputs
+    - Lineage Tracking Across All Executions
+      - E.g. To recurse back to all inputs of a specific artifact
+  - List all training runs and attributes
+  - Visualize lineage of a specific model
+  - Visualize data a model was trained on
+  - Visualize sliced eval metrics associated with a model
+  - Launch TensorBoard for a specific model run
+  - Launch TensorBoard to compare multiple model runs
+  - Compare data statistics for multiple models
+  - Examples of Metadata-Powered Functionality ** 
+    - Use-cases enabled by lineage tracking
+    - Compare previous model runs 
+    - Carry-over state from previous models
+    - Re-use previously computed outputs
+  - How do we orchestrate TFX?
+    - Component
+    - Driver and Publisher
+    - Execute
+    - TFX Config
+  - Bring your very own favorte orchestractor
+    - AirFlow Runtime
+    - Kubeflow Runtime
+    - Your own runtime 
+  - TFX: Putting it all together
+    - Image 
+  - Get started with TensorFlow Extended(TFX)
+    - An End-toEnd ML Platform
+    - https://github.com/tensorflow/tfx
+    - https://tensorflow.org/tfx
+  - TFX End-to-End Example
+    - Chicago Taxi Cab Dataset
+      - Features
+        - Categorical
+        - Bucket
+        - Vocab
+        - Dense Float
+
+  
