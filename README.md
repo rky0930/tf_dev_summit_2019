@@ -736,7 +736,7 @@
     - Modifying machine learning models
       - Environment
         - Google collab hosted Jupyter notebooks and It comes with Swift for TensorFlow
-      - First try:;
+      - First try:
         - Initiate a model
         - Use stocastic gradient descent SDG optimizer
         - Just train a model using swift for tensorflow
@@ -787,23 +787,58 @@
             - It's all very simple straight forward Swift 
             - User can train using Swift TensorFlow model in an openAI gym environment using Python bridge. Totally seamless
             - User can keep train of the parameters of the rewards and plot the mean rewards as the model train using Python Numpy. Totally seamless
-    - No boundary: Differentiable programming
-      - Demo: Differentiable Programming
-        - Differential Programming
-          - annotate @differentiable then tensorflow will derive the derivative for the function
-            - Just plain old double is used becuased automatic differentiation is built right into the language
-        - Custom differential data types
-          - @differentiable helps catch errors
-          - Maginitude of point
-            - Swift doesn't include a square root function because I want a good excuse for you to see the interoperability with C
-            - We're actually goint to use a C's square root function that operates on doubles
-            - Error occured
-              - Square root function is compiled by the C compiler and today the C compiler can't automaticcally computre deribatives for you 
+      - No boundary: Differentiable programming
+        - Demo: Differentiable Programming
+          - Differential Programming
+            - annotate @differentiable then tensorflow will derive the derivative for the function
+              - Just plain old double is used becuased automatic differentiation is built right into the language
+          - Custom differential data types
+            - @differentiable helps catch errors
+            - Maginitude of point
+              - Swift doesn't include a square root function because I want a good excuse for you to see the interoperability with C
+              - We're actually goint to use a C's square root function that operates on doubles
+              - Error occured, Why ?
+                - Square root function is compiled by the C compiler and today the C compiler can't automaticcally compute deribatives for you 
               - This is great excuse to show you how to write custom gradients
-            - So, create own square root function with swift
-          - How to use customization, custom gradients, custom datatypes with the language integrated automatic differentiation built into swift for TensorFlow
+              - So, create own square root function with swift
+          - Demo Summary
+            - How to use 
+              - customization
+              - custom gradients
+              - custom datatypes with the language integrated automatic differentiation built into swift for TensorFlow
           - Printing out values in the backward pass
-
-
-
+      - No boundary: Performance
+        - Speedy low level performance
+        - Thread-level scalability, no GIL
+        - Automatic graph extraction
+        - Example: AlphaGo Zero
+          - Combination of three technologies
+            - Deep learning
+            - "Old AI" techniques: Monte Carlo Search
+            - High performance TPU accelerators
+          - Demo: MiniGo in Colab
+            - Open-source go player inspired by deep minds alphago zero project
+            - It's available on github
+            - Monte Carlo tree search and the rest of mini go self play in pure Swift
+      - No boundary: AI education
+        - Jeremy Howard from Fast.AI
+          - Fast.AI always looking to push the boundaries of what's possible with deep learning especially pushing to make recent advances more accessible
+          - World's best document classifier
+          - Hundreds thousands have become deep learning practitioners through Fast.AI cources
+          - SOTA result with Fast.AI library
+          - Announcing that Fast.AI's next course will include a big Swift component
+    - Most important part is that Swift for TensorFlow is really TensorFlow. 
+    - Open Source
+      - https://github.com/tensorflow/swift
+      - swift@tensorflow.org
+    - colab
+      - Works great in colab
+    - v0.2 is released
+      - Available now: Intrepid researchers wanted! 
+      - Not ready for production yet but
+        - Tensorflow swift team is very excited about 
+          - Shaping future,
+          - Building out,
+          - Exploring new programming model. 
+        - This is a great opportunity for this advanced researchers to get involved and help shape the future of tensorflow swift platform
 
