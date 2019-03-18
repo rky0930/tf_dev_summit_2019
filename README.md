@@ -754,7 +754,7 @@
           - need to define entirely new abstractions or layers
         - Writing custom layers
           - Define DoubleBiasDenseLayer
-          - <Code example>
+          - Code example
           - Initiate
           - Training using custom hand write training loop
         - Simulate running on a super large data parallel GPU or TPU cluster on a single machine
