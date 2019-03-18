@@ -900,5 +900,7 @@
         - Bucket
         - Vocab
         - Dense Float
-
+      - Transfomrs
+      - Model (Wide+Deep)
+      - Output: High tip or not
   
