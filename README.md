@@ -74,7 +74,7 @@
         <b>Chris Lattner</b>, Distinguished Engineer<br>
         <b>Brennan Saeta</b>, Software Engineer
       </td>
-      <td></td>
+      <td><a href="#swift-for-tensorflow-the-next-generation-machine-learning-framework">link</a></td>
     </tr>
     <tr>
       <td>1:00 PM</td>
