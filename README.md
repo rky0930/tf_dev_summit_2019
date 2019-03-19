@@ -119,7 +119,7 @@
       <td>
         <b>André Susano Pinto</b>, Software Engineer
       </td>
-      <td></td>
+      <td><a href="#tensorflow-hub-reusable-machine-learning">link</a></td>
     </tr>
     <tr>
       <td>3:40 PM</td>
