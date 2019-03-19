@@ -1051,3 +1051,53 @@
     - An End-to-End ML Platform
     - https://github.com/tensorflow/tfx
     - https://tensorflow.org/tfx
+
+
+### TensorFlow Hub: Reusable Machine Learning
+  - Discover, share, and reuse machine learning
+  - TensorFlow Hub
+    - When to use ?
+      - Less Data
+        - If you have problems collecting that data to train your models from scratch then transfer learning is technique for you
+      - Less domain expertise
+      - Share without code dependencies
+    - Pre-trained building blocks
+      - Model in Repository
+    - TensorFlow Hub in 2.0
+      - What's comming ?
+        - Integrated with core
+        - New SavedModel features
+        - Easier to save and load parts of a model
+      - Let's see
+        - TF-2.0 and eager
+          - hub.load("model URL")
+          - Due to eager execution, once loaded we can call it right away
+        - SavedModel can share TF primitives such as tf.function and tf.variables
+        - Polymorphic functions
+        - Integration with Keras
+      - 2.0 Status
+        - Hub 0.3 version with hub.load() and hub.KerasLayer()
+        - Published a few modules in new format
+        - Next:Backporting existing modules
+      - tfhub.dev
+        - Cross lingual
+          - New universal sentence encoder
+            - Trained in English, French, German, Spanish, Italian, Chinese, Korean and Japanese
+        - AutoAugment
+          - Image Augmentation
+        - More Modules & More Tools
+          - BERT
+          - Object detection
+          - BigGAN / Progressive GAN
+          - Text & Image features
+          - Video Action recognition
+          - TFJS
+          - AdaNet
+          - TF-Transform
+      - Try it today
+        - https://tfhub.dev
+        - Search for "tf2" modules
+        - Search for "xling" modules
+        - Try the Colab notebooks
+        
+
