@@ -1075,29 +1075,29 @@
         - SavedModel can share TF primitives such as tf.function and tf.variables
         - Polymorphic functions
         - Integration with Keras
-      - 2.0 Status
-        - Hub 0.3 version with hub.load() and hub.KerasLayer()
-        - Published a few modules in new format
-        - Next:Backporting existing modules
-      - tfhub.dev
-        - Cross lingual
-          - New universal sentence encoder
-            - Trained in English, French, German, Spanish, Italian, Chinese, Korean and Japanese
-        - AutoAugment
-          - Image Augmentation
-        - More Modules & More Tools
-          - BERT
-          - Object detection
-          - BigGAN / Progressive GAN
-          - Text & Image features
-          - Video Action recognition
-          - TFJS
-          - AdaNet
-          - TF-Transform
-      - Try it today
-        - https://tfhub.dev
-        - Search for "tf2" modules
-        - Search for "xling" modules
-        - Try the Colab notebooks
-        
+    - 2.0 Status
+      - Hub 0.3 version with hub.load() and hub.KerasLayer()
+      - Published a few modules in new format
+      - Next:Backporting existing modules
+    - tfhub.dev
+      - Cross lingual
+        - New universal sentence encoder
+          - Trained in English, French, German, Spanish, Italian, Chinese, Korean and Japanese
+      - AutoAugment
+        - Image Augmentation
+      - More Modules & More Tools
+        - BERT
+        - Object detection
+        - BigGAN / Progressive GAN
+        - Text & Image features
+        - Video Action recognition
+        - TFJS
+        - AdaNet
+        - TF-Transform
+    - Try it today
+      - https://tfhub.dev
+      - Search for "tf2" modules
+      - Search for "xling" modules
+      - Try the Colab notebooks
+      
 
