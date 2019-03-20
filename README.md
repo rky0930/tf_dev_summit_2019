@@ -132,7 +132,7 @@
       <td>
         <b>Josh Dillon</b>, Software Engineer
       </td>
-      <td></td>
+      <td><a href="#tensorflow-probability">link</a></td>
     </tr>
     <tr>
       <td>4:55 PM</td>
