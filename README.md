@@ -1100,4 +1100,53 @@
       - Search for "xling" modules
       - Try the Colab notebooks
       
-
+### TensorFlow Probability
+  - So many losses! Wouldn't it be greate if 
+    - Maximize Likelihood
+    - Summarize what you learned
+  - A Simple Example: (Deep) Regression
+  - Guess what! You can. 
+    - Linear Regression
+  - Learn known unknowns
+    - Linear Regression (Heteroskedastic)
+  - Learn unknown unknowns
+    - Bayesian Weights
+    - Linear Regression
+  - Learn known and unknown unknowns
+    - Bayesian Weights
+    - Linearn Regression (Heteroskedastic)
+  - Still don't know ? No problem
+    - Bayesian Loss Function
+  - TensorFlow Probability
+    - What is TensorFlow Probability ?
+      - A toolbox for probabilistic modelling
+    - Why use TensorFlow Probability ?
+      - "If my back's to a wall, I predict 'cat.' but Don't make me!"
+       - Statisticians/data scientists: write and launch the same model.
+       - ML researchers/practitioners: make predictions with (un)certainty
+    - How do i use TensorFlow Probability ?
+      - Build model
+        - Distributions
+        - Bijectors
+        - Layers / Losses
+        - Edward2
+      - Do inference
+        - Markov chain Monte Carlo
+        - Variational Inference
+        - Optimizers
+    - A Success Story: BHGE
+      - Automated Anomaly Detection: Known Unknowns + Unknown Unknowns
+    - A Success Story: You?
+      - An open source Python library using TF which makes it easy to combine deep learning with probabilistic models on modern hardware.
+        - Install
+          - pip install tensorflow-probability
+        - Learn
+          - https://tensorflow.org
+        - Discuss
+          - tfprobability@tensorflow.org
+      - Today's Demo: TFP Github Examples
+        - "Probabilistic_Layers_Regression.ipynb
+      - Recommended book:
+        - [Probabilistic Programming & Bayesian Methods for Hackers](http://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/)
+          - Bayesian Methods for Hackers has been ported to TensorFlow Probability. With collaboration from the TensorFlow Probability team at Google, there is now an updated version of Bayesian Methods for Hackers that uses TensorFlow Probability (TFP).
+        - [Amazon link](https://www.amazon.com/Bayesian-Methods-Hackers-Probabilistic-Addison-Wesley/dp/0133902838)
