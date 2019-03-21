@@ -1150,3 +1150,100 @@
         - [Probabilistic Programming & Bayesian Methods for Hackers](http://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/)
           - Bayesian Methods for Hackers has been ported to TensorFlow Probability. With collaboration from the TensorFlow Probability team at Google, there is now an updated version of Bayesian Methods for Hackers that uses TensorFlow Probability (TFP).
         - [Amazon link](https://www.amazon.com/Bayesian-Methods-Hackers-Probabilistic-Addison-Wesley/dp/0133902838)
+
+### Reinforcement Learning in TensorFlow with TF-Agents
+  - Learnign to walk 
+    - Initiali policy
+    - After 1000 episodes
+    - After 1800 episodes
+  - Reinforcement Learning
+  - Have you tried implementing RL ?
+    - DQN, PPO, SAC ...
+    - Policy, Networks
+    - Environments
+    - Replay Buffers
+    - Training
+    - Bellman updates
+    - ...
+  - TF-Agents: Available today
+    - https://github.com/tensorflow/agents
+    - pip install tf-agents-nightly
+  - What is TF-Agents?
+    - A robust, scalable and easy to use Reinforcement Learning Library for TensorFlow
+  - Why use TF-Agents?
+    - Great for Learning RL: Colabs, examples, documentation
+    - Well suited for solving complex problems with RL
+    - Develop new RL algorithms quickly
+    - Well tested and easy to configure with gin-config
+  - TF-Agents is easy to use
+    - Build for TF 2.0:
+      - Develop and debug quickly with TF-Eager
+      - Use tf.keras to define your Networks
+      - Use tf.function to speed everything up
+      - Modular and extensible
+    - Compatible with TF 1.14:
+      - For those not ready to make the change
+  - Learning to walk in a nutshell
+    - Code Example
+      - Create an Actor and Critic Network
+      - Create a Soft-Actor-Critic Agent
+      - Get experience and train
+  - Available Environment Suites
+    - Gym
+    - Atari
+    - Mujoco
+    - PyBullet
+    - DM-Control
+    - Yours .. ?
+  - Available Agents(Fully tested, Model quality regression tests, Speed regression tests)
+    - DQN, DDQN, DQN-RNN
+    - DDPG, TD3
+    - PPO, PPO-RNN
+    - REINFORCE
+    - SAC
+    - Bebavioral Cloning
+    - More coming soon !
+    - Yours ?
+  - System Overview
+    - Environments
+      - Breakout
+    - Playing Breakout faster in TF
+      - You can run in parallel
+    - Training 
+      - Learnable Policy
+        - Observations > Policy > Actions
+      - Defining a Custom Network (Code Example)
+        - Define a Network using Keras layers(RNNs are supported too!)
+      - Policies (Code Example)
+        - QPolicy
+        - PPOPolicy
+        - ActorPolicy
+        - RandomPolicy
+        - GreedyPolicy
+      - Agent (Code Example)
+        - Create an agent
+        - Policy used to explore & collect training data 
+        - Train from a batch of experience
+        - The deployment policy
+      - Train the Neural Network (Code Example)
+        - Create a Network
+        - Create the Agent
+        - Get experience and train teh Agent
+    - Collection 
+      - Collect Expeience (Code Example)
+      - Collect and Train (Code Example)
+  - Roadmap
+    - Agents: C51, D4PG, IQN, Contextual Bandits
+    - Baselines: leaderboard, pre-trained models
+    - Replay buffers: Prioritized, episodic
+    - Distributed Collection
+    - Distributed Training: Multi-GPU, TPU
+    - Environments: Unity
+  - Visit us on GitHub
+    - https://github.com/tensorflow/agents
+      - pip install tf-agents-nightly
+    - Get started with [DQN-Cartpole Colab](https://colab.research.google.com/github/tensorflow/agents/blob/master/tf_agents/colabs/1_dqn_tutorial.ipynb)
+    - Ready to solve important problems
+    - Contributions and PRs are welcome:
+      - Ex: new Environments, enw Agents
+    
