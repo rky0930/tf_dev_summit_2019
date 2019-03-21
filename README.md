@@ -141,7 +141,7 @@
         <b>Sergio Guadarrama</b>, Senior Software Engineer<br>
         <b>Eugene Brevdo</b>, Software Engineer
       </td>
-      <td></td>
+      <td><a href="#reinforcement-learning-in-tensorflow-with-tf-agents">link</a></td>
     </tr>
     <tr>
       <td>5:10 PM</td>
@@ -1153,7 +1153,7 @@
 
 ### Reinforcement Learning in TensorFlow with TF-Agents
   - Learnign to walk 
-    - Initiali policy
+    - Initial policy
     - After 1000 episodes
     - After 1800 episodes
   - Reinforcement Learning
@@ -1183,11 +1183,10 @@
       - Modular and extensible
     - Compatible with TF 1.14:
       - For those not ready to make the change
-  - Learning to walk in a nutshell
-    - Code Example
-      - Create an Actor and Critic Network
-      - Create a Soft-Actor-Critic Agent
-      - Get experience and train
+  - Learning to walk in a nutshell (Code Example)
+    - Create an Actor and Critic Network
+    - Create a Soft-Actor-Critic Agent
+    - Get experience and train
   - Available Environment Suites
     - Gym
     - Atari
@@ -1206,9 +1205,9 @@
     - Yours ?
   - System Overview
     - Environments
-      - Breakout
+      - Ex) Breakout
     - Playing Breakout faster in TF
-      - You can run in parallel
+      - You can run in parallel !
     - Training 
       - Learnable Policy
         - Observations > Policy > Actions
