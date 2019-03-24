@@ -1246,3 +1246,104 @@
     - Contributions and PRs are welcome:
       - Ex: new Environments, enw Agents
     
+### TensorFlow.js 1.0
+  - TensorFlow.js
+    - Nodrivers
+    - Interactive
+    - Privacy
+  - With TensorFlow.js you can ...
+    - Use pre-trained off-the shelf model
+    - Covert existing Python models
+    - Train in the browser and Node.js
+    - Deploy on Platforms
+  - Pre-trained models
+    - Ready to use ML today
+      - Collection of pre-trained models
+      - Image, Audio and Text
+      - User friendly warpper APIs
+      - NPN or hosted scripts
+      - More coming soon
+    - BodyPix Model(Pre-trained person segementation)
+      - Code Example
+    - Toxicity (Pre-trained toxic content classifier)
+      - Code Example
+  - Convert Existing Models
+    - Bring python models into JS
+      - Command line tool
+      - Saved Model TFHub Keras
+      - 170+ Ops
+      - TensorFlow 2.0 Support
+    - Python Model -> TensorFlow.js Converter Tool -> Javascript App
+  - Training 
+    - Layers API (Write models from scratch in Javascript)
+      - High level Keras compatible API
+      - Low level ops API for fine control
+    - Code Example
+      - Import library
+        - CPU or GPU(cuda)
+      - Create model(conv, dense, etc)
+      - Train model from scratch or transfor learning
+      - Save the result of training
+      - After training, get prediction from model
+    - Training Helpers (Data and Visualization)
+      - tf.data
+        - Lazily evaluated data pipelines
+          - JavaScript analog to Python tf.data
+          - Construct data processing pipelines using common transformation operators
+          - Work with data taht does not fit in memory
+        - Code Example
+      - tfjs-vis
+        - In-browser visualization library
+          - Model training behaviour
+          - Model interanls
+          - Model evaluation
+        - Code Example
+    - TensorBoard Support for Node.js
+      - Model training behaviour
+      - Callback for model fit / model fitDataset
+  - Platforms
+    - JavaScript runs almost everywhere !
+      - Browser
+      - Server side (Node.js)
+      - Desktop apps
+      - Mobile
+    - Browser
+      - Creatability
+        - Exploring how creative tools can be made more accessible for everyone
+      - Uber Manifold
+        - ML Debugging
+      - Identiy Document Detection by Airbnb
+    - Server side (Node.js)
+      - Clinic.js
+        - ML powered profiling of server side applications
+    - Desktop
+      - Magenta Studio
+        - Make music with ML
+        - Available in Ableton Live
+    - Mobile 
+      - WeChat + TF
+        - 1B+ total users
+        - 1M+ Mini-Programs
+        - 200M+ DAU
+        - 1.5M+ developers
+      - Demo (WeChat Mini-Programs on iOS) 
+        - Pose detection with TF.js on WeChat miniapp 
+  - TensorFlow.js 1.0
+    - Stable API
+    - Performance
+      - Mobilenet V1 Inference Time in Miliseconds
+      - Improved over 2018
+  - What's next ?
+    - Direct Tensorflow saved model execution in Node js
+    - More off-the-shelf TensorFlow.js models
+    - Tracking Browser Acceleration APIs
+    - Expanding Platform Support
+      - ex) Electron, WeChat, Raspberry Pi and other hybrid mobile platforms that run JavaScript
+  - Thanks 
+    - Resources
+      - Website: https://tensorflow.org/js
+      - Pre-trained Models: https://github.com/tensorflow/tfjs-models
+      - Code Examples: https://github.com/tensorflow/tfjs-examples
+
+  
+      
