@@ -150,7 +150,7 @@
         <b>Yannick Assogba</b>, Front End Software Engineer<br>
         <b>Nick Kreeger</b>, Software Engineer
       </td>
-      <td></td>
+      <td><a href="#tensorflowjs-10">link</a></td>
     </tr>
     <tr>
       <td>5:30 PM</td>
@@ -1248,7 +1248,7 @@
     
 ### TensorFlow.js 1.0
   - TensorFlow.js
-    - Nodrivers
+    - No drivers
     - Interactive
     - Privacy
   - With TensorFlow.js you can ...
@@ -1260,8 +1260,8 @@
     - Ready to use ML today
       - Collection of pre-trained models
       - Image, Audio and Text
-      - User friendly warpper APIs
-      - NPN or hosted scripts
+      - User friendly wrapper APIs
+      - NPM or hosted scripts
       - More coming soon
     - BodyPix Model(Pre-trained person segementation)
       - Code Example
@@ -1327,16 +1327,17 @@
         - 200M+ DAU
         - 1.5M+ developers
       - Demo (WeChat Mini-Programs on iOS) 
-        - Pose detection with TF.js on WeChat miniapp 
+        - Pose detection using TF.js on WeChat miniapp 
   - TensorFlow.js 1.0
     - Stable API
     - Performance
-      - Mobilenet V1 Inference Time in Miliseconds
+      - Mobilenet v1 Inference Time in Miliseconds
       - Improved over 2018
   - What's next ?
     - Direct Tensorflow saved model execution in Node js
     - More off-the-shelf TensorFlow.js models
     - Tracking Browser Acceleration APIs
+      - Symbian wasm(??), WebGPU and WebML
     - Expanding Platform Support
       - ex) Electron, WeChat, Raspberry Pi and other hybrid mobile platforms that run JavaScript
   - Thanks 
