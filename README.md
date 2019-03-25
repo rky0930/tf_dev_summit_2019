@@ -180,8 +180,8 @@
         <b><a href="https://youtu.be/GRMvCeIKvps">TF.js at Creative Labs</a></b> - Irene Alvarado<br>
       </td>
       <td>
-        <a href="#tensorflowjs-10">link</a>
-        <a href="#tensorflowjs-10">link</a>
+        <a href="#lightning-talks-butterfly---nathan-silberman">link</a>
+        <a href="##lightnign-talks-tensorflowjl---a-julia-front-end-to-the-tensorflow-world">link</a>
       </td>
     </tr>
     <tr>
@@ -1443,4 +1443,10 @@
     - The super-friendly Julia community
     - TensorFlow team
   
-### Ligh
+### Lightnign Talks: NetEase - Huijie Lin
+  - 
+   
+
+
+
+  
