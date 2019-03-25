@@ -181,7 +181,7 @@
       </td>
       <td>
         <a href="#lightning-talks-butterfly---nathan-silberman">link</a>
-        <a href="##lightnign-talks-tensorflowjl---a-julia-front-end-to-the-tensorflow-world">link</a>
+        <a href="#lightning-talks-tensorflowjl---a-julia-front-end-to-the-tensorflow-world">link</a>
       </td>
     </tr>
     <tr>
