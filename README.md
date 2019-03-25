@@ -1350,7 +1350,7 @@
       - Code Examples: https://github.com/tensorflow/tfjs-examples
 
 
-### Lightnign Talks: Butterfly - Nathan Silberman
+### Lightning Talks: Butterfly - Nathan Silberman
   - The Power of Ultrasound
   - The Problem: Access
     - 2/3 of the world has no access to medical imaging
@@ -1385,7 +1385,7 @@
       - TensorFlow Serving
   - Life Saving Machine Learning
 
-### Lightnign Talks: TensorFlow.jl - A Julia Front End to the TensorFlow World 
+### Lightning Talks: TensorFlow.jl - A Julia Front End to the TensorFlow World 
   - What is Julia ?
     - Dynamic yet performant programming language developed at MIT since 2009
     - A modern rethinking of a language for scientific computing
