@@ -179,7 +179,10 @@
         <b><a href="https://youtu.be/paJNSODuu3c">Uber Manifold</a></b> - Lezhi Li<br>
         <b><a href="https://youtu.be/GRMvCeIKvps">TF.js at Creative Labs</a></b> - Irene Alvarado<br>
       </td>
-      <td></td>
+      <td>
+        <a href="#tensorflowjs-10">link</a>
+        <a href="#tensorflowjs-10">link</a>
+      </td>
     </tr>
     <tr>
       <td>11:15 AM</td>
@@ -1346,5 +1349,98 @@
       - Pre-trained Models: https://github.com/tensorflow/tfjs-models
       - Code Examples: https://github.com/tensorflow/tfjs-examples
 
+
+### Lightnign Talks: Butterfly - Nathan Silberman
+  - The Power of Ultrasound
+  - The Problem: Access
+    - 2/3 of the world has no access to medical imaging
+    - 5,480 children die daily from pediatric pneumonia
+    - 831 women die daily from preventable maternal-health complications
+  - Butterfly iQ
+  - Demotratizing Ultrasound
+    - 3-in-1 in your pocket:
+      - High-End Ultrasound
+      - Sonographer
+      - Radiologist
+  - Turn-by-Turn Navigation for Ultrasound
+  - Heart Health: Ejection Fraction
+    - Healthy - Unhealthy
+  - What is true ? Annotator Variability
+  - Goal: Statistical Indistinguishability
+  - Train Model to Predict
+    - Connventional Encode - Decoder model
+  - Qualitative Results
+  - Quantitative Results
+  - Powered by TensorFlow
+    - Inference 
+      - TensorFlow on-Device
+      - Custom Ops
+      - Looking at TensorFlow Lite
+    - Training 
+      - GPU-based training
+      - Custom Sampling
+      - tf.data + Pandas Dataframes
+    - Active Learning
+      - Smart Annotation
+      - TensorFlow Serving
+  - Life Saving Machine Learning
+
+### Lightnign Talks: TensorFlow.jl - A Julia Front End to the TensorFlow World 
+  - What is Julia ?
+    - Dynamic yet performant programming language developed at MIT since 2009
+    - A modern rethinking of a language for scientific computing
+    - Version 1.0 (finally) released last year
+  - Code Example
+  - What is Jon ?
+    - N-th year MIT Phd student
+    - Research intersection of vision + text + curiousity by day
+    - Contribute to open-source ML projects by <strike>day</strike> night
+  - Ultra-fast JIT
+    - For-loop comparison
+      - Python - 13 secs
+      - C - 0.9 secs
+      - Julia - 0.95 secs
+  - Powerful metaprogramming
+  - Muliple Dispatch
+  - Julia growing fast !
+  - Introducing TensorFlow.jl
+    - Eager by default, but graph mode available
+    - Partial Keara API (under development)
+    - Inspired by TensorFlow 2.0
+  - Graph mode available
+   - Although eager mode is preferred...
+  - Macros -> named tensors
+  - Macros -> implicit variables
+  - Fast preprocessing
+  - A rich ecosystem of packages
+    - Function - package
+    - Differential equations - DifferentialEquations.jl
+    - Canonical datasets - MLDatasets.jl
+    - Fourier transforms - FFT.jl
+    - Computer vision - Images.jl
+    - Any Python package - PyCall.jl
+  - Reach into Python if you need it
+  - Compatible with the TF ecosystem
+     - Tensor Board
+     - Share serialize dgraphs (in graph mode)
+       - the variable you can save graphs in Julia load them in Python and vise versa
+  - Custom operations
+  - Combile with DiffEq
+  - Roadmap
+    - Fuller Keara API
+    - Distributed training
+    - Expanded documentation and error handling
+    - You can help ...
+  - Get involved!
+    - Download Julia from https://julialang.org
+    - Then '] add TensorFlow#eager_mode' in the Julia REPL
+    - Github: https://github.com/malmaud/Tensorflow.jl
+    - Chat: https://slackinvite.julialang.org/
+    - Twitter: @malmaud
+  - Thanks to...
+    - Lyndon White
+    - Other contributors
+    - The super-friendly Julia community
+    - TensorFlow team
   
-      
+### Ligh
