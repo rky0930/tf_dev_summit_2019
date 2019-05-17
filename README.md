@@ -1,5 +1,10 @@
 # TensorFlow Dev Summit 2019
 
+### Presentation Resouce
+[Report of Tensorflow Dev Summit 2019](https://docs.google.com/presentation/d/1Z1ZB0qWo6GBWFqFqItam4JnVeFqXjReSyfNT7Q8GvIA/edit?usp=sharing)  
+: Presentation Resurce in TensorFlow Dev Summit 2019 Extended Pangyo. This resource is written in Korean.  
+TensorFlow Dev Summit 2019 Extended Pangyo 발표자료. 
+
 ## Day 1 - March 6th
 <div class="devsite-table-wrapper"><table class="devsite-events-agenda android-dev-summit__agenda-table">
   <tbody>
